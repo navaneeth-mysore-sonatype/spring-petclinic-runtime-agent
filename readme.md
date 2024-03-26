@@ -40,6 +40,8 @@ java -javaagent:../runtime-agent-1.0.7.jar \
   -Dsonatype.runtime.agent.scanClasspath=false \
   -Dsonatype.runtime.agent.fetchVulnerableClassesFromIQ=true \
   -Dsonatype.runtime.agent.vulnerableMethodDetectionEnabled=true \
+  -Dsonatype.runtime.agent.runtimeEnabledLabel=true
+  -Dsonatype.runtime.agent.removeRuntimeLabelsOnStartup=true
   -jar target/*.jar
 ```
 
